@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hisaki Orltec</title>
+    <link rel="icon" href="Hisakiico.png" type="image/x-icon">
+    <meta charset="UTF-8">
+
+    <style>
+        /* ページ全体の基本設定 */
+        body {
+            background-color: #ffffab;
+            margin: 0;
+            padding-top: 70px; 
+            font-size: 16px;
+        }
+
+        /* 固定ヘッダーのスタイル */
+        #fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #ffffff;
+            color: rgb(100, 99, 99);
+            padding: 5px 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+            z-index: 1000;
+        }
+        #fixed-header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        
+        /* 中央寄せ */
+        .content-wrapper {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 0 10px;
+        }
+
+        /* 本文ボックス(Main)のスタイル */
+        .content-box {
+            background-color: white;
+            border: 1px solid #cccccc;
+            padding: 20px 20px 5px 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 緑色の帯の見出し */
+        .content-box h2, .content-box .title-bar {
+        background-color: #98fb98;
+        color: #000000;
+        padding: 5px 7px;
+        border-top: 1px solid #006400;
+        border-bottom: 1px solid #006400;
+        margin: -21px -20px 20px -20px; 
+        font-weight: bold;
+        line-height: 1.2; 
+}
+
+        .content-box h2 {
+            font-size: 30px;
+        }
+
+        .content-box .title-bar {
+            font-size: 20px;
+        }
+
+        /* 目次（NAV）と本文(Main)のレイアウト */
+        .content-with-toc {
+            display: flex;
+            align-items: stretch;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* 左側の目次(Nav)ボックス1 */
+        #toc-sidebar {
+            width: 230px;
+            flex-shrink: 0;
+            background-color: #f9f9f9; 
+            padding: 15px;
+            border-right: 1px solid #e0e0e0;
+        }
+
+        /* 目次ボックスの見出し */
+        #toc-sidebar .toc-title-bar {
+            background-color: transparent;
+            color: #000000;
+            border: none;
+            margin: 0 0 15px 0;
+            padding: 0;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 1.2; 
+            text-decoration: underline;
+        }
+        
+        /* 目次リストのスタイル */
+        #toc-sidebar ul {
+            list-style: none; 
+            padding: 0;
+            margin: 0;
+        }
+        #toc-sidebar a {
+            text-decoration: none;
+            color: #007bff;
+            display: block;
+            padding: 5px 0;
+            font-size: 18px;
+        }
+
+        /* 右側の本文(Main)領域 */
+        .article-content {
+            flex: 1;
+            padding-left: 20px;
+        }
+
+        /* 見出し(Nav)内の小見出し */
+        .article-content h3 {
+            background-color: transparent; 
+            color: #333;
+            border: none;
+            margin: 20px 0 10px 0;
+            padding: 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* サイドボックスのスタイル */
+        .sidebar-box {
+            width: 300px;
+            margin-left: 20px;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border: 1px solid #eee;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 固定ヘッダ -->
+    <header id="fixed-header"> 
+        <h1><img src="Hisakiico.png" alt="Hisakiico" width=32 height=27> Hisaki Orltec</h1>
+    </header>
+    <!-- 固定ヘッダの終わり -->
+
+    <div class="content-wrapper">
+
+        <!-- Hisaki Orltec ホームページへようこそ！ -->
+        <div class="content-box">
+            <h2>Hisaki Orltec ホームページへようこそ！</h2>
+            
+            <div class="content-with-toc">
+                
+                <!-- 目次 -->
+                <div id="toc-sidebar">
+                    <h3 class="toc-title-bar">目次</h3>
+                    <ul>
+                        <li><a href="#welcome">ようこそ</a></li>
+                        <li><a href="#latest">最新情報</a></li>
+                    </ul>
+                </div>
+                
+                <!-- 本文 -->
+                <div class="article-content">
+                    <h3 id="welcome">ようこそ</h3>
+                    <p>Hisakiホームページでは最新情報を閲覧いただけます。</p>
+                    <p>今後ソフトウェアのダウンロードなども追加予定です！</p>
+                    
+                    <h3 id="latest">最新情報</h3>
+                    <p>Hisakiウェブサイトをリリース！</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Hisaki Orltec ホームページへようこそ！の終わり -->
+
+            <!-- 製品情報 -->
+        <div class="content-box">
+            <h2>今までよりずっとシンプルに</h2>
+            
+            <div class="content-with-toc">
+                
+                <!-- 目次 -->
+                <div id="toc-sidebar">
+                    <h3 class="toc-title-bar">目次</h3>
+                    <ul>
+                        <li><a href="#NAVOS">Navigator OS</a></li>
+                        <li><a href="#PORDOC">Power Documents</a></li>
+                    </ul>
+                </div>
+                
+                <!-- 本文 -->
+                <div class="article-content">
+                    <h3 id="NAVOS">Navigator OS</h3>
+                    <p>よりシンプルに、より早く、使いやすく。</p>
+                    <p>NavigatorOSは軽さ・操作性・視覚的を重視したOSです。</p>
+                    <p>Windowsとの互換性は無く、Windows2000やXPをモチーフに開発を進めています。</p>
+                    
+                    <h3 id="PORDOC">Power Documents</h3>
+                    <p>よりシンプルに一つに統合されたかのような使いやすいOffice環境を提供。</p>
+                    <p>Microsoft Officeとは互換性が無く、その代わりにより高いコラボレーションを実現させます。</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 製品情報の終わり -->
+
+            <!-- 製品のリリース情報 -->
+            <div class="content-box">
+                <h2>製品のリリース情報</h2>
+                <details>
+                <summary>メモ帳</summary>
+                <p>＜バージョン1.0＞</p>
+                <p>Open and File New Error</p>
+                <p>(すでに開いでいる状態（新しいウインドウが開くシナリオ）で新規作成をすると、新しいウインドウがそのファイルを開きます。（新規作成なので存在しないファイルを参照してエラー）)</p>
+                <p>New File Save not</p>
+                <p>新規作成で今開いているファイルを上書き保存で空白にしたときに、新しいウインドウが開かない仕様なはずが、新しいウインドウで空白状態で開きます。（Open and File New Errorと関連？） </p>
+                <p>の２つのバグを修正しました。</p>
+                <p>・報告されているバグ</p>
+                <p>ありません</p>
+                </details>
+                <p></p>
+            </div>
+            <!-- 製品のリリース情報終わり -->
+
+            <!-- フッター -->
+            <div class="content-box">
+                <p>Hisaki Orltec 2025</p>
+                <p>Hisaki ホームページ</p>
+            </div>
+            <!-- フッターの終わり -->
+
+            </div>
+        </div>
+</body>
+</html>
